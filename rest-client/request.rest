@@ -1,0 +1,22 @@
+get http://localhost:3000/users
+
+###localhost:3000/users HTTP/2.0
+
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "flag":"true",
+    "name":"Brenda",
+    "password":"123"
+}
+
+###
+POST http://localhost:3000/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "flag":"true",
+    "name":"Brenda",
+    "password":"12"
+}
